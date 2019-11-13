@@ -1,9 +1,11 @@
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
-#Loading data into pandas framework
+
+#Loading and creating a framework
 data = pd.read_csv(r"/Users/IAmNaveed/Desktop/Final_Research_Project/Bank_Marketing/bank-additional/bank-additional-full.csv")
 data = data.drop('duration',axis=1)
 data.head()
@@ -50,5 +52,5 @@ dataProcessed.head()
 # storing processed data
 dataProcessed.columns
 
-dataProcessed.to_csv(r""/Users/IAmNaveed/Desktop/Final_Research_Project/Bank_Marketing/bank-additional/ohefull.csv", index=False)
+dataProcessed.to_csv(r""/Users/IAmNaveed/Desktop/Final_Research_Project/Bank_Marketing/bank-additional/ohe_full.csv", index=False)
 
